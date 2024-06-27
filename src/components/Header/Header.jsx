@@ -10,6 +10,7 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
             value={getcity}
             onChange={handleChange}
           />
+          <button type="submit">Search</button>
         </form>
       </section>
     </>
