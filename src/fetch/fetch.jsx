@@ -1,7 +1,7 @@
 export const fetchData = async (getCity) => {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${getCity}&limit=5&appid=0c4812369203c9c8a85d583724245506`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${getCity}&limit=5&appid=0c4812369203c9c8a85d583724245506`
     )
     if (!response.ok) {
       throw new Error('Network response was not ok')

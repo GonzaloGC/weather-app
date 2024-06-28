@@ -83,6 +83,17 @@
   border-radius: 15px;
   background-color: hsla(240, 25%, 38%, 0.47);
   backdrop-filter: blur(80px);
+  /* background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  backdrop-filter: blur(80px);
+  animation: shimmer 1.5s infinite; */
+}
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 /* .card7{
   border: 1px solid wheat;
