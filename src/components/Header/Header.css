@@ -1,0 +1,32 @@
+.container-form{
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  padding-bottom: 10px;
+}
+.input-search {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px 0 0 50px;
+  background-color: aqua;
+  border: none;
+  font-size: 15px;
+  position: relative;
+  color: black;
+  padding-left: 25px;
+}
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 0 50px 50px 0;
+  background-color: aqua;
+  border: none;
+  /* padding-top: 1px; */
+  color: black;
+  /* left: 300px; */
+  /* position: absolute; */
+}

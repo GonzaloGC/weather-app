@@ -3,7 +3,7 @@ import { SkeletonLoader } from '../SkeletonLoader/SkeletonLoader'
 
 export const CardWeather = ({ weatherData }) => {
   if (weatherData === '' || weatherData.main === '') {
-    return <div>no hay nada</div>
+    return <div>{''}</div>
   } else if (!weatherData || !weatherData.main) {
     return <SkeletonLoader /> // Mostrar un mensaje de carga mientras no hay datos
   }
@@ -19,9 +19,41 @@ export const CardWeather = ({ weatherData }) => {
         transition={{ duration: 0.5 }}
       > */}
       <section className="container-card">
-        <div className="card">
-          <h1>La temperatura en {nombre} es </h1>
-          <div>{temperaturaActual}° Celsius</div>
+        <div className="card1">
+          {/* <h3>La tem en {nombre} es </h3> */}
+          <div className='number-tem'>{temperaturaActual}</div><span className='celcius'>°C</span>
+        </div>
+        <div className="card2">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card3">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card4">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card5">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card6">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card7">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card8">
+          <h1> </h1>
+          <div></div>
+        </div>
+        <div className="card9">
+          <h1> </h1>
+          <div></div>
         </div>
       </section>
       {/* </motion.div> */}

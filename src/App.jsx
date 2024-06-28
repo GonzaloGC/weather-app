@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { SkeletonLoader } from './components/SkeletonLoader/SkeletonLoader'
 import { CardWeather } from './components/CardWeather/CardWeather'
 import { Header } from './components/Header/Header'
-import { fetchData } from '../fetch/fetch'
+import { fetchData } from './fetch/fetch'
 
 export const App = () => {
   const [getCity, setGetCity] = useState('')
