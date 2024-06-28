@@ -11,7 +11,11 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
       }
     }, 300)
   }
-
+  const handleKeyDown = (event) => {
+    if (event.key === 'enter') {
+      inputRef.current.blur()
+    }
+  }
   return (
     <>
       <h1>Weather in your city</h1>
@@ -25,6 +29,7 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
               value={getcity}
               onChange={handleChange}
               onFocus={handleFocus}
+              onKeyDown={handleKeyDown}
             />
             <button type="submit">
               <svg
