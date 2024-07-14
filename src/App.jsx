@@ -24,6 +24,7 @@ export const App = () => {
       const fetchWeatherData = async () => {
         try {
           const data = await fetchData(getCity)
+          // console.log(data)
           setWeatherData(data)
         } catch (error) {
           console.error('Error fetching data:', error)

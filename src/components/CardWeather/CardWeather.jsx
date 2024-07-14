@@ -43,7 +43,7 @@ export const CardWeather = ({ weatherData }) => {
           <h1> </h1>
           <div></div>
         </div>
-        <div className="card7">
+        {/* <div className="card7">
           <h1> </h1>
           <div></div>
         </div>
@@ -54,7 +54,7 @@ export const CardWeather = ({ weatherData }) => {
         <div className="card9">
           <h1> </h1>
           <div></div>
-        </div>
+        </div> */}
       </section>
       {/* </motion.div> */}
     </>

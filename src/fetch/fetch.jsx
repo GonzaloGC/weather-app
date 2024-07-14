@@ -23,11 +23,11 @@ export const fetchData = async (getCity) => {
     }
 
     const weatherData = await weatherResponse.json()
+    console.log(weatherData)
     return weatherData
-    // console.log(weatherData)
   } catch (error) {
     console.error('Error fetching data:', error)
     throw error
   }
 }
-// fetchData()
+fetchData()
