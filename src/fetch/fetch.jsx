@@ -30,4 +30,4 @@ export const fetchData = async (getCity) => {
     throw error
   }
 }
-fetchData()
+// fetchData()
