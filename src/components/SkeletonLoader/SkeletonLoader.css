@@ -18,6 +18,15 @@
   "hum hum hum"; */
   gap: 5px;
 }
+.container-spinner{
+  width: auto;
+  height: auto;
+  /* width: 300px;
+  height: 340px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .number-tem{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 110px;

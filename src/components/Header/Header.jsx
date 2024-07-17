@@ -18,7 +18,7 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
   }
   return (
     <>
-      <h1>Weather in your city</h1>
+      <h1 className='main-title'>Weather in your city</h1>
       <section className="container-form">
         <form onSubmit={handleSubmit}>
           <div className="input-container">

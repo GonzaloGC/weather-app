@@ -10,6 +10,9 @@
   position: relative;
 
 }
+.main-title{
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
 .icon-location{
   position: absolute;
   z-index: 10;
@@ -18,7 +21,7 @@
   /* left: 10px; */
 }
 h1 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .input-search {
   width: 250px;
@@ -30,6 +33,7 @@ h1 {
   position: relative;
   color: black;
   padding-left: 45px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 /* .input-search:hover{
   border-color: darkblue;

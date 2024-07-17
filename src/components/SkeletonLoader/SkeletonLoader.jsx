@@ -1,9 +1,14 @@
+import './SkeletonLoader.css'
+import DotLoader from 'react-spinners/DotLoader'
+
 export const SkeletonLoader = () => {
   return (
     <>
-      <section className="container-card">
+      <div className='container-spinner'>
+      <DotLoader color="rgba(73, 73, 121, 1)" />
+      </div>
+      {/* <section className="container-card">
         <div className="card1">
-          {/* <h3>La tem en {nombre} es </h3> */}
           <div className='number-tem'></div><span className='celcius'></span>
         </div>
         <div className="card2">
@@ -26,19 +31,7 @@ export const SkeletonLoader = () => {
           <h1> </h1>
           <div></div>
         </div>
-        {/* <div className="card7">
-          <h1> </h1>
-          <div></div>
-        </div>
-        <div className="card8">
-          <h1> </h1>
-          <div></div>
-        </div>
-        <div className="card9">
-          <h1> </h1>
-          <div></div>
-        </div> */}
-      </section>
+      </section> */}
     </>
   )
 }
