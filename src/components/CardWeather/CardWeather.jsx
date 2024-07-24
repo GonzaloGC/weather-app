@@ -25,6 +25,11 @@ export const CardWeather = ({ weatherData }) => {
   const nombre = weatherData.name || 'Unknown location'
   const temperaturaActualKelvin = weatherData.main.temp
   const temperaturaActual = Math.round(temperaturaActualKelvin - gradosKelvin)
+  const temperaturaMinimaKelvin = weatherData.main.temp_min
+  const temperaturaMaximaKelvin = weatherData.main.temp_max
+
+  const temperaturaMinima = Math.round(temperaturaMinimaKelvin - gradosKelvin)
+  const temperaturaMaxima = Math.round(temperaturaMaximaKelvin - gradosKelvin)
 
   const iconWeather = weatherData.weather[0].icon
   // console.log(iconWeather)
@@ -60,7 +65,7 @@ export const CardWeather = ({ weatherData }) => {
             {/* <img className="icon-weather" src={getIcon} alt="icono" /> */}
           </div>
           <div className="card3">
-            <h1> </h1>
+            <span>T° min<br/> {temperaturaMinima}°C <br/> <hr className='line'/> T° max <br/>{temperaturaMaxima}°C </span>
             <div></div>
           </div>
           <div className="card4">
