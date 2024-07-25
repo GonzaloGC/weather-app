@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Spinner } from '../Spinner/Spinner'
 import { motion } from 'framer-motion'
+import { Clock } from '../Clock/Clock'
 // import { useState } from 'react'
 
 export const CardWeather = ({ weatherData }) => {
@@ -65,7 +66,12 @@ export const CardWeather = ({ weatherData }) => {
             {/* <img className="icon-weather" src={getIcon} alt="icono" /> */}
           </div>
           <div className="card3">
-            <span>T° min<br/> {temperaturaMinima}°C <br/> <hr className='line'/> T° max <br/>{temperaturaMaxima}°C </span>
+            <span>
+              T° mín
+              <br /> {temperaturaMinima}°C <br /> <hr className="line" /> T° máx{' '}
+              <br />
+              {temperaturaMaxima}°C{' '}
+            </span>
             <div></div>
           </div>
           <div className="card4">
@@ -73,7 +79,7 @@ export const CardWeather = ({ weatherData }) => {
             <div></div>
           </div>
           <div className="card5">
-            <h1> </h1>
+            <h1></h1>
             <div></div>
           </div>
           <div className="card6">

@@ -1,3 +1,4 @@
+import { Clock } from '../Clock/Clock'
 import './Header.css'
 import { useRef } from 'react'
 
@@ -18,7 +19,7 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
   }
   return (
     <>
-      <h1 className='main-title'>Weather in your city</h1>
+      <h1 className="main-title">Weather in your city</h1>
       <section className="container-form">
         <form onSubmit={handleSubmit}>
           <div className="input-container">
@@ -81,6 +82,10 @@ export const Header = ({ handleSubmit, getcity, handleChange }) => {
           </div>
         </form>
       </section>
+
+      <div className="clock">
+        <Clock />
+      </div>
     </>
   )
 }

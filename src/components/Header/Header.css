@@ -59,3 +59,13 @@ button {
   /* left: 300px; */
   /* position: absolute; */
 }
+
+.clock {
+  margin: 0;
+  padding-bottom: 35px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+}
